@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carp diem 3.0 coming soon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   
+    <div class="hero">
+      
+         <video autoplay loop muted plays-inline class="bvideo">
+            <source src="assets/v4u.mp4" type="video/mp4">
+        </video>  
+        <div class="content">
+            <div class="writeup">
+               
+            <p>The flagship North Eastern E-summit of NIT-Agartala</p>
+            <img src="assets/carpediem.png"alt="ee" class="cape">
+            
+            <h1 class="ss">   Coming Soon</h1>        
+        </div>
+        <div class="launch-time">
+            <div class="tt">
+                <p id="days">00</p>
+                <span>Days</span>
+                </div>
+                <div class="tt"> <p id="hours">00</p>
+                    <span>Hrs</span></div>
+               <div class="tt"><p id="mins">00</p>
+                <span>Min</span></div>
+                <div class="tt">
+                <p id="sec">00</p>
+                <span>Sec</span>
+            </div>
+            
+           </div>
+           <h2 clas="ss"> Until then</h2>
+           <button class="ball" onclick="location.href = 'assets/car.mp4'"> Don't Click Me
+        </button>
+
+       
+       
+      
+    
+
+    </div>
+        </div>
+   
+  
+</div>
+
+<img src="assets/wecell.png" alt="e-cell_logo" class="logo">
+
+<script>
+    var countDownDate= new Date("Jan 27, 2023 00:00:00 ").getTime();
+    var x= setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate-now;
+        var days =Math.floor(distance/(1000*60*60*24));
+        var hours =Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+        var minutes =Math.floor((distance%(1000*60*60))/(1000*60));
+        var seconds =Math.floor((distance%(1000*60))/1000);
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("mins").innerHTML = minutes;
+        document.getElementById("sec").innerHTML = seconds;
+    },1000)
+</script>     
+
+</body>
+</html>

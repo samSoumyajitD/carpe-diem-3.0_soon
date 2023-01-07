@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+.writeup {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  text-align: center;
+  right: 3%;
+  top: 35%;
+  font-size: large;
+  position: relative;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: "poppins", sans-serif;
+}
+
+/* .content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+
+} */
+.bvideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: black;
+
+}
+.cape {
+  width: 550px;
+  height: 130px;
+  position: relative;
+}
+#days {
+  border-radius: 30px;
+  border: 2px;
+  background-color: blue;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
+  );
+
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+  padding: 0.1rem;
+}
+#hours {
+  border-radius: 30px;
+  border: 2px;
+  background-color: blue;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
+  );
+
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+  padding: 0.1rem;
+}
+#mins {
+  border-radius: 30px;
+  border: 2px;
+  background-color: blue;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
+  );
+
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+  padding: 0.1rem;
+}
+#sec {
+  border-radius: 30px;
+  border: 2px;
+  background-color: blue;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(45, 116, 213, 1) 11.2%,
+    rgba(121, 137, 212, 1) 91.2%
+  );
+
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+  padding: 0.1rem;
+}
+.content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 0.5rem;
+}
+.tt {
+  padding: 0.5rem 0.5rem;
+}
+.ss {
+  font-family: "Roboto", sans-serif;
+}
+.content h1 span {
+  color: #ffb100;
+  font-family: "Kaushan Script", cursive;
+
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.launch-time {
+  border: #9f69fe;
+
+  padding-left: 5rem;
+  display: flex;
+
+  align-items: center;
+  font-family: "Iceland", cursive;
+
+  color: #00008b;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.writeup p {
+  top: 2%;
+  padding-bottom: 0.75rem;
+}
+.launch-time div {
+  flex-basis: 10rem;
+  font-size: 2rem;
+}
+.launch-time div span {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+
+  padding: 0.5rem;
+}
+.launch-time div p {
+  font-size: 4rem;
+  padding-top: 0.3 rem;
+
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  bottom: 2em;
+  left: 2rem;
+  cursor: pointer;
+  position: fixed;
+}
+/* .rocket{
+    width: 16%;
+    position: absolute;
+    right: 20%;
+    bottom: 5%;
+    animation: rocket 3s linear forwards ;
+ }
+ @keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: .5;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+ } */
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+button {
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.ball {
+  justify-content: center;
+  align-items: center;
+  right: 50%;
+  padding: 0.75rem;
+  left: 50%;
+}
+@media (max-aspect-ratio: 16/9) {
+  #days {
+    border-radius: 40%;
+    border: 2px;
+    background-color: blue;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(45, 116, 213, 1) 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+    );
+
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+    padding: 0.1rem;
+  }
+  #hours {
+    border-radius: 40%;
+    border: 2px;
+    background-color: blue;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(45, 116, 213, 1) 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+    );
+
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+    padding: 0.1rem;
+  }
+  .cape {
+    width: 450px;
+    height: 120px;
+    position: relative;
+    padding: 2px 10px;
+  }
+  #mins {
+    border-radius: 40%;
+    border: 2px;
+    background-color: blue;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(45, 116, 213, 1) 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+    );
+
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+    padding: 0.1rem;
+  }
+  #sec {
+    border-radius: 40%;
+    border: 2px;
+    background-color: blue;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(45, 116, 213, 1) 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+    );
+
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+
+    padding: 0.1rem;
+  }
+  .tt {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .ss {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .bvideo {
+    width: auto;
+    height: 100%;
+  }
+  .logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    bottom: 3rem;
+    left: 3rem;
+    cursor: pointer;
+    position: fixed;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+  .writeup {
+    padding-top: 2rem;
+
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    text-align: center;
+    right: 3%;
+    top: 30%;
+    font-size: large;
+    position: relative;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: "poppins", sans-serif;
+  }
+
+  /* .content h1:hover{
+          -webkit-text-stroke: 2px #fff;
+          color: transparent;
+      
+      } */
+
+  .content h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 0.5rem;
+  }
+
+  .content h1 span {
+    color: #ffb100;
+    font-family: "Kaushan Script", cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .launch-time {
+    padding-top: 0.5rem;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Iceland", cursive;
+    color: #00008b;
+    padding-right: 15%;
+    font-size: 2rem;
+  }
+  .writeup p {
+    top: 2%;
+    padding-bottom: 0.75rem;
+  }
+  .launch-time div {
+    flex-basis: 10rem;
+  }
+  .launch-time div span {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+
+    padding: 0.5rem;
+  }
+  .launch-time div p {
+    font-size: 4rem;
+    padding-top: 0.3 rem;
+
+    margin-bottom: 1rem;
+  }
+
+  /* .rocket{
+          width: 16%;
+          position: absolute;
+          right: 20%;
+          bottom: 5%;
+          animation: rocket 3s linear forwards ;
+       }
+       @keyframes rocket{
+          0%{
+              bottom: 0;
+              opacity: .5;
+          }
+          100%{
+              bottom: 105%;
+              opacity: 1;
+          }
+       } */
+  h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  button {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  }
+
+  button:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+  }
+
+  button:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .ball {
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    padding: 0.75rem;
+    left: 50%;
+  }
+}
