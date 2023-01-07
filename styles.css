@@ -318,7 +318,8 @@ button:active {
   * {
     margin: 0;
     padding: 0;
-
+    
+/*     height: 100 */
     box-sizing: border-box;
   }
   .writeup {
@@ -329,7 +330,7 @@ button:active {
 
   .hero {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     position: relative;
     padding: 0 5%;
